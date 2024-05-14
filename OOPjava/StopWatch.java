@@ -4,14 +4,14 @@ public class StopWatch {
     private double startTime;
     private double endTime;
 
-    public double getStartTime() {
-        return startTime;
-    }
-
-    public double getEndTime() {
-        return endTime;
-
-    }
+//    public double getStartTime() {
+//        return startTime;
+//    }
+//
+//    public double getEndTime() {
+//        return endTime;
+//
+//    }
 
     public void start() {
         startTime = System.currentTimeMillis();
@@ -21,12 +21,12 @@ public class StopWatch {
         endTime = System.currentTimeMillis();
     }
     public double getElapsedTime(){
-        return getEndTime()-getStartTime();
+        return endTime-startTime;
     }
 
     public static void main(String[] args) {
         int []arr = new int[100000];
-        for (int i = 0; i < arr.length ;i++) {
+        for (int i = 0; i < 100000 ;i++) {
             arr[i]= (int) (Math.random()*100000);
 
         }
@@ -38,9 +38,10 @@ public class StopWatch {
 
     }
     public static void selectionSort(int[]arr){
-        for (int i = 0; i < arr.length; i++) {
+        int length = arr.length;
+        for (int i = 0; i < length; i++) {
             int min = 0;
-            for (int j = i+1; j < arr.length ; j++) {
+            for (int j = i+1; j < length ; j++) {
                 if(min>arr[j]){
                     min = j;
                 }
