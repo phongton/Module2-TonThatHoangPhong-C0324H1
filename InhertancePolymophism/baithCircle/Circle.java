@@ -1,4 +1,4 @@
-package InhertancePolymophism;
+package InhertancePolymophism.baithCircle;
 
 public class Circle extends Shape {
     private double radius = 1.0;
@@ -25,7 +25,7 @@ public class Circle extends Shape {
     }
     @Override
     public String toString() {
-        return "a circle with radius " + getRadius()+"which a subclass of "+ super.toString();
+        return "a circle with radius " + getRadius();
     }
 
 
@@ -34,10 +34,10 @@ public class Circle extends Shape {
 class CircleTest{
     public static void main(String[] args) {
         Circle circle = new Circle();
-        System.out.println(circle.toString());
+        System.out.println(circle);
         circle = new Circle(3.5);
-        System.out.println(circle.toString());
+        System.out.println(circle);
         circle = new Circle(3.5,"blue",false);
-        System.out.println(circle.toString());
+        System.out.println(circle);
     }
 }

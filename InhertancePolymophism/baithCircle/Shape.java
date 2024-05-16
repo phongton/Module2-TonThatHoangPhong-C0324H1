@@ -1,4 +1,4 @@
-package InhertancePolymophism;
+package InhertancePolymophism.baithCircle;
 
 public class Shape {
     private String color = "red";
@@ -9,6 +9,9 @@ public class Shape {
     public Shape(String color, boolean filled) {
         this.color = color;
         this.filled = filled;
+    }
+
+    public Shape(String color) {
     }
 
     public boolean isFilled() {
