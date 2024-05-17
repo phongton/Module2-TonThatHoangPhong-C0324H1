@@ -5,6 +5,10 @@ public class Circle {
     private String color = "red";
     public Circle() {
     }
+
+    public Circle(double v, String black, boolean b) {
+    }
+
     public String getColor(){
         return color;
     }

@@ -31,7 +31,10 @@ public class Shape {
     }
     @Override
     public String toString(){
-        return "A shape with Color: " + getColor() + " Filled: " + (isFilled()?"filled":"not filled");
+        return " A shape with Color: " + getColor() + " Filled: " + (isFilled()?"filled":"not filled");
+    }
+    public double getArea(){
+        return getArea();
     }
 
 }

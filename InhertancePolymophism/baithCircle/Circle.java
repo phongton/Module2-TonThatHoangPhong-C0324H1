@@ -1,6 +1,8 @@
 package InhertancePolymophism.baithCircle;
 
-public class Circle extends Shape {
+import AnimalInterface_Edible.InterFaceBT.Resizeable;
+
+public class Circle extends Shape  {
     private double radius = 1.0;
     public Circle() {}
     public Circle(double radius) {
@@ -25,7 +27,7 @@ public class Circle extends Shape {
     }
     @Override
     public String toString() {
-        return "a circle with radius " + getRadius();
+        return " a circle with radius " + getRadius() ;
     }
 
 
