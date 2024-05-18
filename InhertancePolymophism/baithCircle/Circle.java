@@ -27,7 +27,7 @@ public class Circle extends Shape  {
     }
     @Override
     public String toString() {
-        return " a circle with radius " + getRadius() ;
+        return " a circle with radius " + getRadius() + getArea();
     }
 
 
@@ -37,9 +37,9 @@ class CircleTest{
     public static void main(String[] args) {
         Circle circle = new Circle();
         System.out.println(circle);
-        circle = new Circle(3.5);
+        circle = new Circle(2);
         System.out.println(circle);
-        circle = new Circle(3.5,"blue",false);
+        circle = new Circle(3.0,"blue",false);
         System.out.println(circle);
     }
 }
